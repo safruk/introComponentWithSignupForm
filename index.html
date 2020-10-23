@@ -43,10 +43,12 @@
           <span class="form__tryIt">then $20/mo. thereafter</span>
         </h3>
         <form
-          novalidate="true"
+          novalidate
           class="form__style form__style--neutral form__main"
         >
           <input
+          title="First Name"
+          aria-label = "undefined"
             required
             type="text"
             name="firstName"
@@ -56,6 +58,8 @@
           <i class="form__error-msg"></i>
 
           <input
+          title="Last Name"
+          aria-label = "undefined"
             required
             type="text"
             name="lastName"
@@ -65,18 +69,21 @@
           <i class="form__error-msg"></i>
 
           <input
+            title="Email Address"
             required
             type="email"
             name="Your email"
             placeholder="Email Address"
             pattern="[^@\s]+@[^@\s+\^@\s]+"
             aria-label="undefined"
-            aria-labelledby="undefined"
+           
             class="form__field form__email"
           />
           <i class="form__error-msg"> </i>
 
           <input
+          title="Password"
+          aria-label = "undefined"
             required
             type="password"
             name="password"
