@@ -1,0 +1,43 @@
+//BUTTON STYLE
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 1.35rem 3rem;
+    border: 1px solid HSLA(0, 0%, 0%, 0.1);
+    border-radius: 0.5rem;
+    outline: none;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--color-primary-2);
+    color: #fff;
+    box-shadow: 0 0.5rem 0rem HSLA(154, 80%, 36%, 0.8);
+    cursor: pointer;
+    transition: transform 0.2s;
+    outline: none;
+    border: none;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    outline: none;
+    border: none;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(1px);
+  }
+}

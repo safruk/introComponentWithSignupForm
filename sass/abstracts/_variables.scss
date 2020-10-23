@@ -1,0 +1,28 @@
+//COLOR VARIABLES
+:root {
+  /*
+    ### Primary
+
+- Red:  hsl(0, 100%, 74%)
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+- Blue: hsl(248, 32%, 49%)
+*/
+
+  --color-primary-1: hsl(0, 100%, 74%);
+  --color-primary-2: hsl(154, 59%, 51%);
+
+  --color-accent: hsl(248, 32%, 49%);
+  /*
+    ### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+*/
+  --color-neutral-1: hsl(249, 10%, 26%);
+  --color-neutral-2: hsl(246, 25%, 77%);
+
+  --color-text-1: hsl(100, 100%, 100%);
+  --color-text-2: hsl(0, 0%, 0%);
+}

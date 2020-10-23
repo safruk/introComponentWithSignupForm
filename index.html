@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__block header__block-left">
+        <h1 class="header__heading-primary">
+          Learn to code by watching others
+        </h1>
+
+        <h2 class="header__heading-secondary">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great,but understanding how developers think is
+          invaluable.
+        </h2>
+      </div>
+      <div class="header__block form__block">
+        <h3 class="form__style form__style--accent">
+          Try it free 7 days
+          <span class="form__tryIt">then $20/mo. thereafter</span>
+        </h3>
+        <form
+          novalidate="true"
+          class="form__style form__style--neutral form__main"
+        >
+          <input
+            required
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            class="form__field form__firstName"
+          />
+          <i class="form__error-msg"></i>
+
+          <input
+            required
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            class="form__field form__lastName"
+          />
+          <i class="form__error-msg"></i>
+
+          <input
+            required
+            type="email"
+            name="Your email"
+            placeholder="Email Address"
+            pattern="[^@\s]+@[^@\s+\^@\s]+"
+            aria-label="undefined"
+            aria-labelledby="undefined"
+            class="form__field form__email"
+          />
+          <i class="form__error-msg"> </i>
+
+          <input
+            required
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="form__field form__password"
+          />
+          <i class="form__error-msg"></i>
+
+          <button type="submit" class="btn">Claim your free trial</button>
+          <p class="form__footer">
+            By clicking the button, you are agreeing to our
+            <span class="form__terms">Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </header>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://safruk.github.io/Safas-website"
+          >Safa Ruknuddin &rarr;</a
+        >.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+//BASE STYLES
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 40.625%; // 1rem= 6px  6/16= 37.5%;// 1rem= 6.5px  6.5/16= 40.625%;// upto 300px honor 10 lite, nokia 8011g, jio phone
+
+  @include respond(phone) {
+    // 300-600px //regular phones
+    font-size: 56.25%; //  1rem=8px 8/16= 50%; //1rem=9px 9/16= 56.25%;
+  }
+
+  // @include respond(tab-port){ //600-900px also includes 900px-1200px // for all tablets portrait | landscape  mode
+  //   font-size: 56.25%  //1rem= 9px 9/16= 56.25%
+  // }
+
+  @include respond(small-desktop) {
+    // 1200 -1800 //Regular desktops
+    font-size: 62.5%; //1rem=10px 10/16=62.5%;
+  }
+
+  @include respond(big-desktop) {
+    // 1800 and above
+    font-size: 75%; //1rem=12px 12/16=75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background: top center/cover url("../images/bg-intro-mobile.png")
+    var(--color-primary-1);
+  color: var(--color-text-1);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(tab-port) {
+    background: center/cover url("../images/bg-intro-desktop.png")
+      var(--color-primary-1);
+  }
+}
+
+.attribution {
+  margin: 0 3rem;
+  text-align: center;
+  color: var(--color-text-1);
+  a {
+    color: var(--color-accent);
+  }
+}
+
+// ::selection {
+//   background-color: var(--color-text-1);
+//   color: var(--color-accent);
+//   caret-color: var(--color-accent);
+// }

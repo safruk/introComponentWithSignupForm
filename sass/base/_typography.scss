@@ -1,0 +1,59 @@
+//TYPOGRAPHY STYLES
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.header {
+  &__heading-primary {
+    font-size: 2.75rem;
+    font-weight: 700;
+    @include respond(phone-lg) {
+      font-size: 4rem;
+    }
+    @include respond(small-desktop) {
+      font-size: 4.9rem;
+    }
+  }
+
+  &__heading-secondary {
+    font-size: inherit;
+    font-weight: 500;
+  }
+}
+.form {
+  &__style {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+  }
+  &__field {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    &::placeholder {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+    &::after,
+    &:active {
+      border: 1px solid transparent;
+    }
+  }
+  &__tryIt {
+    text-align: center;
+    font-weight: 400;
+    color: hsla(100, 100%, 100%, 0.9);
+  }
+  &__footer {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+.attribution {
+  font-size: 1.3rem;
+}
