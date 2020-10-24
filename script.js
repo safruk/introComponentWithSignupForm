@@ -30,8 +30,10 @@ function handleSubmit(event) {
   }
 
   //When everything is alright form should be set to validate.Havent figured it out yet
-  // form.setAttribute("novalidate", "false");
-  // console.log(form.attributes.novalidate);
+  // else {
+  //   form.removeAttribute("novalidate");
+  // }
+  // console.log(form.attributes);
 }
 
 function setError(input, message) {

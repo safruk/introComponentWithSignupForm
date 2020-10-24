@@ -43,12 +43,15 @@
           <span class="form__tryIt">then $20/mo. thereafter</span>
         </h3>
         <form
+          id="form"
           novalidate
+          action=" "
+          method="get"
           class="form__style form__style--neutral form__main"
         >
           <input
-          title="First Name"
-          aria-label = "undefined"
+            title="First Name"
+            aria-label="undefined"
             required
             type="text"
             name="firstName"
@@ -58,8 +61,8 @@
           <i class="form__error-msg"></i>
 
           <input
-          title="Last Name"
-          aria-label = "undefined"
+            title="Last Name"
+            aria-label="undefined"
             required
             type="text"
             name="lastName"
@@ -76,14 +79,13 @@
             placeholder="Email Address"
             pattern="[^@\s]+@[^@\s+\^@\s]+"
             aria-label="undefined"
-           
             class="form__field form__email"
           />
           <i class="form__error-msg"> </i>
 
           <input
-          title="Password"
-          aria-label = "undefined"
+            title="Password"
+            aria-label="undefined"
             required
             type="password"
             name="password"
@@ -92,7 +94,9 @@
           />
           <i class="form__error-msg"></i>
 
-          <button type="submit" class="btn">Claim your free trial</button>
+          <button type="submit" class="btn" form="form">
+            Claim your free trial
+          </button>
           <p class="form__footer">
             By clicking the button, you are agreeing to our
             <span class="form__terms">Terms and Services</span>
